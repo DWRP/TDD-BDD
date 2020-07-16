@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "node test.js",
+    "tdd": "npx jasmine",
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {
@@ -16,7 +17,8 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4",
-    "jasmine": "^3.5.0"
+    "cucumber": "^6.0.5",
+    "jasmine": "^3.5.0",
+    "nodemon": "^2.0.4"
   }
 }
