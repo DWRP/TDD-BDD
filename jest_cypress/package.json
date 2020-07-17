@@ -1,16 +1,17 @@
 {
-  "name": "jasmi-cucam",
+  "name": "jest-cypress",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "node test.js",
-    "tdd": "./node_modules/.bin/jasmine",
-    "bdd": "./node_modules/.bin/cucumber-js features/*.feature",
+    "tdd": "./node_modules/.bin/jest",
+    "bdd": "./node_modules/.bin/cypress run -b chrome",
+    "cypress:open": "./node_modules/.bin/cypress open",
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
+    "cypress": "^4.10.0",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
@@ -18,9 +19,7 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
-    "cucumber": "^6.0.5",
-    "jasmine": "^3.5.0",
-    "nodemon": "^2.0.4",
-    "selenium-webdriver": "^4.0.0-alpha.7"
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4"
   }
 }
